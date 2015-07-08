@@ -379,4 +379,25 @@
             <option id="private">Private</option>
         </options>
     </instance>
+    <instance id="vocab-contentworktype">
+        <web-url>contentworktype</web-url>
+        <title-ref>contentworktype</title-ref>
+        <title>Content - Work Type</title>
+        <options>
+            <option id="depicts">depicts</option>
+            <option id="isFrom">is from</option>
+            <option id="issueOf">issue of</option>
+            <option id="references">references</option>
+        </options>
+    </instance>
+    <instance id="vocab-contententitytype">
+        <web-url>contententitytype</web-url>
+        <title-ref>contententitytype</title-ref>
+        <title>Content - Entity Type</title>
+        <options>
+            <option id="depicts">depicts</option>
+            <option id="references">references</option>
+            <option id="seealso">see also</option>
+        </options>
+    </instance>
 </instances>
