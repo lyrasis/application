@@ -1,0 +1,30 @@
+<record id="person"  type="authority" is-extension="true" generate-services-schema="true">
+    <services-record-path id="mmi">
+        persons_mmi:http://collectionspace.org/services/person/local/mmi,persons_mmi
+    </services-record-path>
+    <instances id="person">
+        <instance id="person-person">
+            <web-url>person</web-url>
+            <title-ref>person</title-ref>
+            <title>Local Entity</title>
+        </instance>
+        <instance id="person-ulan_pa">
+            <web-url>ulan_pa</web-url>
+            <title-ref>ulan_pa</title-ref>
+            <title>ULAN Entity</title>
+        </instance>
+    </instances>
+    <section id="personNameAuthorityInformation">
+        <repeat id="affiliatedEntityGroupList/affiliatedEntityGroup"
+                section="mmi">
+            <field id="affiliatedEntity" autocomplete="person-person,person-ulan_pa"
+                   section="mmi" />
+            <field id="affiliatedEntity" autocomplete="vocab-persontermtype"
+                   section="mmi" />
+        </repeat>
+        <field id="entityContactName" autocomplete="person-person,person-ulan_pa"
+               section="mmi" />
+        <field id="function" datatype="largetext"
+               section="mmi" />
+    </section>
+</record>

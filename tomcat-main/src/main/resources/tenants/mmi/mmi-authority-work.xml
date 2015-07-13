@@ -7,8 +7,10 @@
                 section="mmi" />
         <field id="medium" autocomplete="vocab-medium" ui-type="enum"
                section="mmi" />
-        <repeat id="migratedEntityGroupList/migratedEntityGroup" section="mmi">
-            <field id="migratedEntity" section="mmi" />
+        <repeat id="migratedEntityGroupList/migratedEntityGroup"
+                section="mmi">
+            <field id="migratedEntity" autocomplete="person-person"
+                   section="mmi" />
             <field id="migratedEntityType" autocomplete="vocab-migratedentitytype" ui-type="enum"
                    section="mmi" />
         </repeat>
