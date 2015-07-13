@@ -19,7 +19,7 @@
                 section="mmi">
             <field id="affiliatedEntity" autocomplete="person-person,person-ulan_pa"
                    section="mmi" />
-            <field id="affiliatedEntity" autocomplete="vocab-persontermtype"
+            <field id="affiliatedEntityType" autocomplete="vocab-persontermtype"
                    section="mmi" />
         </repeat>
         <field id="entityContactName" autocomplete="person-person,person-ulan_pa"
