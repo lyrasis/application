@@ -1,6 +1,8 @@
 <record id="acquisition" is-extension="true" type="record,procedure">
 
-    <services-record-path id="mmi">acquisitions_mmi:http://collectionspace.org/services/acquisition/local/mmi,acquisitions_mmi</services-record-path>
+    <services-record-path id="mmi">
+        acquisitions_mmi:http://collectionspace.org/services/acquisition/local/mmi,acquisitions_mmi
+    </services-record-path>
     <section id="acquisitionInformation">
         <field id="accessionDateGroup" datatype="date" ui-type="date" />
         <field id="acquisitionMethod">

@@ -1,5 +1,7 @@
 <record id="collection-object" is-extension="true" generate-services-schema="true" type="record">
-    <services-record-path id="mmi">collectionobjects_mmi:http://collectionspace.org/services/collectionobject/local/mmi,collectionobjects_mmi</services-record-path>
+    <services-record-path id="mmi">
+        collectionobjects_mmi:http://collectionspace.org/services/collectionobject/local/mmi,collectionobjects_mmi
+    </services-record-path>
     <section id="identificationInformation">
         <field id="administrativeRemarks" section="mmi" datatype="largetext" />
         <field id="provenance" section="mmi" datatype="largetext" />
