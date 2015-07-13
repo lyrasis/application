@@ -52,6 +52,7 @@
             <tenant>
                 <id>5</id>
                 <name>cspace.movingimage.us</name>
+                <domain>mmi</domain>
                 <version>0.1</version>
                 <display-name>Collectionspace MMI Tenant</display-name>
             </tenant>
