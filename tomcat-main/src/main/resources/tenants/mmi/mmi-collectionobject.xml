@@ -30,7 +30,7 @@
     <section id="contentInformation">
         <repeat id="contentEntitiesGroupList/contentEntitiesGroup" section="mmi">
             <field id="contentEntity" section="mmi"
-                   autocomplete="organization-organization,person-person" />
+                   autocomplete="person-person" />
 
 
             <field id="contentEntityType" section="mmi"
