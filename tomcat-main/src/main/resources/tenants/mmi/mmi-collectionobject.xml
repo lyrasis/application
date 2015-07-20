@@ -11,7 +11,7 @@
     </section>
     <section id="descriptionInformation">
         <repeat id="contentWorkGroupList/contentWorkGroup" section="mmi">
-            <field id="contentWork" autocomplete="person-person" section="mmi" />
+            <field id="contentWork" autocomplete="work-work" section="mmi" />
 
             <field id="contentWorkType" autocomplete="vocab-contentworktype"
                    ui-type="enum" section="mmi">
