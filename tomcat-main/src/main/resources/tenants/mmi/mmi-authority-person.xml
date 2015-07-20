@@ -2,7 +2,7 @@
     <services-record-path id="mmi">
         persons_mmi:http://collectionspace.org/services/person/local/mmi,persons_mmi
     </services-record-path>
-    <instances id="person">
+   <instances id="person">
         <instance id="person-person">
             <web-url>person</web-url>
             <title-ref>person</title-ref>
@@ -19,7 +19,7 @@
                 section="mmi">
             <field id="affiliatedEntity" autocomplete="person-person,person-ulan_pa"
                    section="mmi" />
-            <field id="affiliatedEntityType" autocomplete="vocab-persontermtype"
+            <field id="affiliatedEntityType" autocomplete="vocab-persontermtype" ui-type="enum"
                    section="mmi" />
         </repeat>
         <field id="entityContactName" autocomplete="person-person,person-ulan_pa"
