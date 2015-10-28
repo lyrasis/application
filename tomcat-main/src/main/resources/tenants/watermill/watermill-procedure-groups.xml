@@ -1,0 +1,14 @@
+<record id="group">
+    <section id="groupInformation">
+        <field id="responsibleDepartment" seperate_ui_container="true">
+            <selector>group-responsibleDepartment</selector>
+            <options>
+                <option id="artcollection">Art collection</option>
+                <option id="RW-work">RW work</option>
+                <option id="RW-archives">RW archives</option>
+                <option id="library">Library</option>
+                <option id="WM-archives">WM archives</option>
+            </options>
+        </field>
+    </section>
+</record> <!-- close GROUPS record -->

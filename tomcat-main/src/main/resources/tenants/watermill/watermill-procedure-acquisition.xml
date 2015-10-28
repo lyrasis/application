@@ -1,0 +1,14 @@
+<!-- <include src="base-acquisition.xml,watermill-procedure-acquisition.xml" merge="xmlmerge.properties"/> -->
+<record id="acquisition">
+    <section id="acquisitionInformation">
+        <field id="acquisitionMethod" ui-search="repeatable" seperate_ui_container="true">
+            <selector>acquisition-acquisition-method</selector>
+            <options>
+                <option id="exchange">Exchange</option>
+                <option id="gift" default="yes">Gift</option>
+                <option id="purchase">Purchase</option>
+                <option id="donation">Donation</option>
+            </options>
+        </field>
+    </section>
+</record>

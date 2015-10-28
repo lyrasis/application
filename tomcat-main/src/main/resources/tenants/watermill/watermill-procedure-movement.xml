@@ -1,0 +1,53 @@
+<record id="movement">
+    <section id="locationMovementInformation">
+        <field id="currentLocationFitness">
+            <options>
+                <option id="suitable">Suitable</option>
+                <option id="temporary">Temporary</option>
+                <option id="unsuitable">Unsuitable</option>
+            </options>
+        </field>
+    </section>
+    <section id="movementControlInformation">
+        <field id="reasonForMove" ui-search="repeatable">
+            <options>
+                <option id="" default="yes">Please select a value</option>
+                <option id="conservation">Conservation</option>
+                <option id="exhibition">Exhibition</option>
+                <option id="inventory">Inventory</option>
+                <option id="loan">Loan</option>
+                <option id="newstoragelocation">New Storage Location</option>
+                <option id="photography">Photography</option>
+                <option id="research">Research</option>
+                <option id="newpermanentinstallation">New Permanent Installation</option>
+            </options>
+        </field>
+        <field id="movementContact" ui-search="repeatable" autocomplete="person-person"></field>
+        <repeat id="movementMethods">
+            <field id="movementMethod" ui-search="repeatable">
+                <selector>movement-movementMethods</selector>
+                <options>
+                    <option id="" default="yes">Please select a value</option>
+                    <option id="forklift">Forklift</option>
+                    <option id="handcarried">Handcarried</option>
+                    <option id="trolley">Trolley</option>
+                    <option id="shipped">Shipped</option>
+                    <option id="professionalarthandler">Professional art handler</option>
+                </options>
+            </field>
+        </repeat>
+    </section>
+    <section id="inventory">
+        <field id="inventoryActionRequired" ui-search="repeatable">
+            <options>
+                <option id="" default="yes">Please select a value</option>
+                <option id="conservation">Conservation</option>
+                <option id="preservation">Preservation</option>
+                <option id="re-housing">Re-housing</option>
+                <option id="resolvenumbering">Resolve numbering</option>
+            </options>
+        </field>
+    </section>
+</record>
+
+

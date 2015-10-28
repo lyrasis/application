@@ -1,0 +1,14 @@
+<!-- <include src="base-procedure-valuationcontrol.xml,watermill-procedure-valuationcontrol.xml" merge="xmlmerge.properties"/> -->
+<record id="valuationcontrol">
+    <section id="objectValuationInformation">
+        <field id="valueType" ui-search="repeatable" in-title="yes" mini="summary,search,list,relate">
+            <options>
+                <option id="">Please select a value</option>
+                <option id="Current Value">Current Value</option>
+                <option id="Estimated Value">Estimated Value</option>
+                <option id="Original Value">Original Value</option>
+                <option id="Replacement Value">Replacement Value</option>
+            </options>
+        </field>
+    </section>
+</record>

@@ -1,0 +1,29 @@
+<record id="objectexit">
+    <section id="objectexitInformation">
+        <repeat id="exitMethods">
+            <field id="exitMethod" ui-search="repeatable">
+                <selector>objectexit-exitMethods</selector>
+                <options>
+                    <option id="" default="yes">Please select a value</option>
+                    <option id="courier">Courier</option>
+                    <option id="staffcarried">Staff carried</option>
+                    <option id="shipping">Shipping</option>
+                    <option id="post">Post</option>
+                    <option id="inperson">In Person</option>
+                    <option id="arthandling">Art handling</option>
+                </options>
+            </field>
+        </repeat>
+        <field id="exitReason" ui-search="repeatable">
+            <options>
+                <option id="" default="yes">Please select a value</option>
+                <option id="deaccession">Deaccession</option>
+                <option id="disposal">Disposal</option>
+                <option id="returnofloan">Return of Loan</option>
+                <option id="sale">Sale</option>
+                <option id="trade">Trade</option>
+                <option id="gift">Gift</option>
+            </options>
+        </field>
+    </section>
+</record>

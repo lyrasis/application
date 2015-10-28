@@ -1,0 +1,58 @@
+<!-- <include src="base-collectionobject.xml,watermill-collectionobject.xml" merge="xmlmerge.properties"/> -->
+<record id="collection-object">
+  <section id="identificationInformation">
+    <repeat id="otherNumberList/otherNumber">
+      <field id="numberType" in-tab="yes" seperate_ui_container="true">
+        <selector>object-identification-other-number-type</selector>
+        <options>
+          <option id="">Please select a value</option>
+          <option id="oldaccessionnumber">Old accession number</option>
+          <option id="assignedinventorynumber">Assigned inventory number</option>
+          <option id="temporarynumber">Temporary number</option>
+        </options>
+      </field>
+    </repeat>
+    <repeat id="responsibleDepartments" has-primary="yes">
+      <selector>object-identification-responsible-department</selector>
+      <field id="responsibleDepartment" ui-search="repeatable" mini="search,list"
+        seperate_ui_container="true">
+        <selector>object-identification-responsible-department</selector>
+        <options>
+          <option id="">Please select a value</option>
+          <option id="artcollection">Art collection</option>
+          <option id="RW-work">RW work</option>
+          <option id="RW-archives">RW archives</option>
+          <option id="library">Library</option>
+          <option id="WM-archives">WM archives</option>
+        </options>
+      </field>
+    </repeat>
+    <field id="collection" ui-search="repeatable" seperate_ui_container="true">
+      <selector>object-identification-collection</selector>
+      <options>
+      </options>
+    </field>
+    <field id="recordStatus" ui-search="repeatable" seperate_ui_container="true">
+      <selector>object-identification-record-status</selector>
+      <options>
+        <option id="approved">Approved</option>
+        <option id="in-process">In process</option>
+        <option id="temporary">Temporary</option>
+      </options>
+    </field>
+    <repeat id="titleGroupList/titleGroup">
+      <field id="titleType" seperate_ui_container="true">
+        <selector>object-identification-object-title-type</selector>
+        <options>
+          <option id="">Please select a value</option>
+          <option id="assigned-by-artist">Assigned by Artist</option>
+          <option id="collection">Collection</option>
+          <option id="generic">Generic</option>
+          <option id="popular">Popular</option>
+          <option id="series">Series</option>
+          <option id="trade">Trade</option>
+        </options>
+      </field>
+    </repeat>
+  </section>
+</record>

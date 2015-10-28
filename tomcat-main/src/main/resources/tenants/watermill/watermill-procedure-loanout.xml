@@ -1,0 +1,17 @@
+<!-- <include src="base-procedure-valuationcontrol.xml,watermill-procedure-valuationcontrol.xml" merge="xmlmerge.properties"/> -->
+<record id="loanout">
+    <section id="loanoutInformation">
+        <field id="loanPurpose" ui-search="repeatable" seperate_ui_container="true">
+            <selector>loanOut-loanPurpose</selector>
+            <options>
+                <option id="" default="yes">Please select a value</option>
+                <option id="exhibition">Exhibition</option>
+                <option id="research">Research</option>
+                <option id="considerforpurchase">Consider for purchase</option>
+                <option id="photography">Photography</option>
+                <option id="conservation">Conservation</option>
+                <option id="framingordisplaystand">Framing or display stand</option>
+            </options>
+        </field>
+    </section>
+</record>
