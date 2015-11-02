@@ -3,6 +3,6 @@
     <section id="mediaInformation">
         <field id="isPrimary" datatype="boolean" section="mmi" />
         <field id="isOriginalMedia" datatype="boolean" section="mmi" />
-        <field id="status" autocomplete="vocab-mediastatus" ui-type="enum" section="mmi" />
+        <field id="mediaStatus" autocomplete="vocab-mediastatus" ui-type="enum" section="mmi" />
     </section>
 </record>
