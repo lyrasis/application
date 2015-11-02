@@ -15,16 +15,17 @@
         </instance>
     </instances>
     <section id="personNameAuthorityInformation">
-        <repeat id="affiliatedEntityGroupList/affiliatedEntityGroup"
+        <repeat id="affiliatedPersonOrgGroupList/affiliatedPersonOrgGroup"
                 section="mmi">
-            <field id="affiliatedEntity" autocomplete="person-person,person-ulan_pa"
-                   section="mmi" />
-            <field id="affiliatedEntityType" autocomplete="vocab-persontermtype" ui-type="enum"
-                   section="mmi" />
+            <field id="affiliatedPersonOrg" autocomplete="person-person,person-ulan_pa" section="mmi" />
+            <field id="affiliatedPersonOrgType" autocomplete="vocab-persontermtype" ui-type="enum" section="mmi" />
         </repeat>
-        <field id="entityContactName" autocomplete="person-person,person-ulan_pa"
-               section="mmi" />
-        <field id="function" datatype="largetext"
-               section="mmi" />
+        <field id="lifeSpan" section="mmi"/>
+        <repeat id="orgContactNames" section="mmi">
+            <field id="orgContactName" autocomplete="person-person" section="mmi" />
+        </repeat>
+        <repeat id="orgFunctions" section="mmi">
+            <field id="orgFunction" section="mmi" />
+        </repeat>
     </section>
 </record>

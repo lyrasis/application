@@ -4,10 +4,15 @@
         acquisitions_mmi:http://collectionspace.org/services/acquisition/local/mmi,acquisitions_mmi
     </services-record-path>
     <section id="acquisitionInformation">
-        <field id="accessionDate" datatype="date" ui-type="date"
+        <field id="mmiAccessionDate" datatype="date" ui-type="date"
                 section="mmi" >
             <container-selector>acquisition-accessionDateGroup-container</container-selector>
         </field>
+		<repeat id="mmiAcquisitionDates" section="mmi">
+            <field id="mmiAcquisitionDate" datatype="date" ui-type="date" section="mmi">
+                <selector>acquisition-mmiAcquisitionDate</selector>
+            </field>
+        </repeat>
         <field id="acquisitionMethod">
             <options>
                 <option id="gift" default="yes">Gift</option>
@@ -18,6 +23,6 @@
             </options>
         </field>
 
-        <field id="extent" section="mmi" datatype="largetext" />
+        <field id="acquisitionExtent" section="mmi" datatype="largetext" />
     </section>
 </record>
