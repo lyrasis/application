@@ -63,9 +63,12 @@
         <field id="preferredWork" ui-type="groupfield/preferredWork/selfrenderer" ui-func="cspace.preferred">
             <selector>preferred-workAuthority</selector>
         </field>
-        <field id="scopeNote"/>
+        <!--
+            "genre" and "medium" are additions needed for MMI v2.6 migration
+         -->
         <field id="genre" ui-search="repeatable" autocomplete="vocab-genre" ui-type="enum"/>
-        <field id="medium" ui-search="repeatable" autocomplete="vocab-medium" ui-type="enum"/>	
+        <field id="medium" ui-search="repeatable" autocomplete="vocab-medium" ui-type="enum"/>
+        <!-- "workHistoryNote" maps to "scopeNote" of MMI v2.6 schema -->
         <field id="workHistoryNote"/>
         <field id="workType" ui-search="repeatable" autocomplete="vocab-worktype" ui-type="enum"/>
         <repeat id="workDateGroupList/workDateGroup">
