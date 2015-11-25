@@ -53,9 +53,10 @@
 			
 			<include src="base-authority-concept-termList.xml"/>
 			<include src="base-authority-concept.xml"/>
-			<include src="base-authority-work-termList.xml"/>
+			<include src="base-authority-work-termList.xml,mmi-authority-work-termList.xml"
+					merge="xmlmerge.properties"/>
 			<include src="base-authority-work.xml,mmi-authority-work.xml"
-					 merge="xmlmerge.properties" />
+					merge="xmlmerge.properties" />
 
 			<include src="base-vocabularies.xml"/>
 
@@ -70,7 +71,8 @@
 			<include src="base-other-dimension.xml"/>
 			<include src="base-other-hierarchy.xml"/>
 			<include src="base-other-idgenerator.xml"/>
-			<include src="base-other-structureddate.xml"/>
+			<include src="base-other-structureddate.xml,mmi-other-structureddate.xml"
+					merge="xmlmerge.properties"/>
 			<include src="base-other-termlist.xml"/>
 			<include src="base-other-termlistitem.xml"/>
 			<include src="base-other-reporting.xml"/>
