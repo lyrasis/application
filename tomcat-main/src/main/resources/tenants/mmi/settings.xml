@@ -51,9 +51,9 @@
             <url>http://localhost:8180/cspace-services</url>
             <tenant>
                 <id>5</id>
-                <name>cspace.movingimage.us</name>
+                <name>movingimage.us</name>
                 <domain>mmi</domain>
-                <version>0.1</version>
+                <version>4.2</version>
                 <display-name>Collectionspace MMI Tenant</display-name>
             </tenant>
             <repository>
