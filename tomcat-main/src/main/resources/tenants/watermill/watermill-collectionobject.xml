@@ -55,4 +55,15 @@
       </field>
     </repeat>
   </section>
+  
+  <section id="descriptionInformation">  
+    <section id="contentInformation">
+	  <repeat id="contentConcepts">
+        <field id="contentConcept" autocomplete="concept-classification">
+          <selector>object-description-content-concept</selector>
+        </field>
+      </repeat>
+	</section>
+  </section>
+  
 </record>

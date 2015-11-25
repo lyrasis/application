@@ -328,7 +328,7 @@
     </repeat>
     <repeat id="materialGroupList/materialGroup">
       <!-- selector>collection-object-materialGroup</selector -->
-      <field id="material" ui-search="repeatable">
+      <field id="material" ui-search="repeatable" autocomplete="concept-material_ca">
         <selector>object-description-material</selector>
       </field>
       <field id="materialComponent">
@@ -659,7 +659,7 @@
     </repeat>
     <repeat id="objectProductionPlaceGroupList/objectProductionPlaceGroup">
       <!-- selector>collection-object-objectProductionPlaceGroup</selector -->
-      <field id="objectProductionPlace" ui-search="repeatable">
+      <field id="objectProductionPlace" ui-search="repeatable" autocomplete="place-place">
         <selector>object-production-place</selector>
       </field>
       <field id="objectProductionPlaceRole"/>
