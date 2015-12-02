@@ -1,0 +1,6 @@
+<record id="place" >
+    <section id="placeAuthorityInformation">
+        <field id="placeType" ui-search="repeatable" autocomplete="vocab-placetermtype" ui-type="enum">
+        </field>
+    </section>
+</record>

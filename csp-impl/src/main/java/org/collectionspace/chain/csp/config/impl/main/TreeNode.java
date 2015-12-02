@@ -23,6 +23,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang.StringUtils;
 import org.collectionspace.chain.csp.config.SectionGenerator;
 import org.collectionspace.chain.csp.config.RuleTarget;
+import org.collectionspace.chain.csp.config.impl.parser.AssemblingContentHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -164,26 +165,26 @@ public class TreeNode {
 	// For debugging purposes, this method dumps the configuration tree to
 	//
 	private static String DUMPED_TREES_DIRNAME = "cspace-app-dumpedTrees";
-	void dumpTreeToFile(String treeString) throws Exception {
-		File dumpedTreeFilesDir = new File(FileUtils.getTempDirectoryPath() + "/" + DUMPED_TREES_DIRNAME);
+	void dumpTreeToFile(File tempDirectory, String treeString) throws Exception {
+		File dumpedTreeFilesDir = new File(tempDirectory, DUMPED_TREES_DIRNAME);
 		if (dumpedTreeFilesDir.exists() == false) {
 			dumpedTreeFilesDir.mkdir();
 		}
 		File dumpTreeFile = new File(dumpedTreeFilesDir.getAbsolutePath() + "/dumpTree-" + UUID.randomUUID().toString() + ".xml");
 		dumpTreeFile.createNewFile();
 		this.setContents(dumpTreeFile, treeString);
-		log.debug("Config XML tree dumped to: " + dumpTreeFile.getAbsolutePath());
+		log.info("Config XML tree dumped to: " + dumpTreeFile.getAbsolutePath());
 	}
 	
-	public void dump()
+	public void dump(File tempDirectory)
 	{
-		if (log.isDebugEnabled() == true) {
+		if (log.isInfoEnabled() == true) {
 			StringBuffer strBuf = new StringBuffer();
 			dumpNode(strBuf);
 			try {
-				dumpTreeToFile(strBuf.toString());
+				dumpTreeToFile(tempDirectory, strBuf.toString());
 			} catch (Exception e) {
-				log.debug("Could not dump configuration tree to debug log file.", e);
+				log.info("Could not dump configuration tree to debug log file.", e);
 			}
 		}
 	}

@@ -1,4 +1,4 @@
-<instances>
+<root>
     <instance id="vocab-cataloglevel">
         <web-url>cataloglevel</web-url>
         <title-ref>cataloglevel</title-ref>
@@ -50,4 +50,4 @@
             <option id="relatedto">related to</option>
         </options>
     </instance>
-</instances>
+</root>

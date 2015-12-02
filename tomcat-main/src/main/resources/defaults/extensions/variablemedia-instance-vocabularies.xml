@@ -1,4 +1,4 @@
-<instances id="vocabularies">
+<root id="vocabularies">
     <instance id="vocab-technicalchange">
         <web-url>technicalchange</web-url>
         <title-ref>technicalchange</title-ref>
@@ -187,4 +187,4 @@
             <option id="videocassetteplayer">  Videocassette player</option>
         </options>
     </instance>
-</instances>
+</root>

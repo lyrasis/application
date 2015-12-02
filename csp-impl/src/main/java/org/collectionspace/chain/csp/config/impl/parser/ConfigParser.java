@@ -66,7 +66,7 @@ public class ConfigParser {
 			tree_root.claim(rules,"ROOT",null,null);
 			SectionImpl ms_root=new SectionImpl(null,"ROOT",null);
 			tree_root.run_all(ms_root);
-			tree_root.dump();
+			tree_root.dump(AssemblingContentHandler.tempDirectory);
 			ms_root.buildTargets(null);
 			ms_root.dump();
 		} catch(Throwable t) {
