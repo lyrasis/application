@@ -5,6 +5,7 @@
 		<title>placetermtype</title>
 		<options>
 			<option id="autonomous_region">Autonomous region</option>
+			<option id="archipelago">Archipelago</option>
 			<option id="borough">Borough</option>
 			<option id="city">City</option>
 			<option id="collection_site">Collection site</option>
@@ -17,11 +18,15 @@
 			<option id="district_national">District (national)</option>
 			<option id="general_region">General region</option>
 			<option id="governorate">Governorate</option>
+			<option id="historic_region">Historic region</option>
+			<option id="historic_site">Historic site</option>
 			<option id="inhabited_place">Inhabited place</option>
 			<option id="island">Island</option>
 			<option id="island_group">Island group</option>
+			<option id="lake">Lake</option>
 			<option id="locality">Locality</option>
 			<option id="metropolitan_area">Metropolitan area</option>
+			<option id="mountain_range">Mountain Range</option>
 			<option id="municipality">Municipality</option>
 			<option id="nation">Nation</option>
 			<option id="national_division">National division</option>
@@ -30,8 +35,11 @@
 			<option id="prefecture">Prefecture</option>
 			<option id="province">Province</option>
 			<option id="region">Region</option>
+			<option id="river">River</option>
 			<option id="state">State</option>
 			<option id="state_province">State province</option>
+			<option id="strait">Strait</option>
+			<option id="stream">Stream</option>
 			<option id="territory">Territory</option>
 			<option id="union_territory">Union territory</option>
 			<option id="unitary_authority">Unitary authority</option>
