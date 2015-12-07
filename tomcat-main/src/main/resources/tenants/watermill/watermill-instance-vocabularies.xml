@@ -44,6 +44,7 @@
 			<option id="territory">Territory</option>
 			<option id="union_territory">Union territory</option>
 			<option id="unitary_authority">Unitary authority</option>
+			<option id="unknown">Unknown</option>
 			<option id="urban_prefecture">Urban prefecture</option>
 			<option id="water_body">Water body</option>
 		</options>
