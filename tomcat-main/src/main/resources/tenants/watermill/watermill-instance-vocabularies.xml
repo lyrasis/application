@@ -19,8 +19,8 @@
 			<option id="district_national">District (national)</option>
 			<option id="general_region">General region</option>
 			<option id="governorate">Governorate</option>
-			<option id="historic_region">Historic region</option>
-			<option id="historic_site">Historic site</option>
+			<option id="historical_region">Historical region</option>
+			<option id="historical_site">Historical site</option>
 			<option id="inhabited_place">Inhabited place</option>
 			<option id="island">Island</option>
 			<option id="island_group">Island group</option>
