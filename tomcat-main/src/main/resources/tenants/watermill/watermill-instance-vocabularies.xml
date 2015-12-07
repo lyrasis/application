@@ -7,6 +7,7 @@
 			<option id="autonomous_region">Autonomous region</option>
 			<option id="archipelago">Archipelago</option>
 			<option id="borough">Borough</option>
+			<option id="border">Border</option>
 			<option id="city">City</option>
 			<option id="collection_site">Collection site</option>
 			<option id="continent">Continent</option>
