@@ -10,6 +10,8 @@
                 <option id="display">Display</option>
                 <option id="private">Private</option>
             </options>
-        </field>		
+        </field>
+        <field id="creator" ui-search="repeatable" autocomplete="person-person"></field>
+        <field id="rightsHolder" ui-search="repeatable" autocomplete="person-person"></field>		
     </section>
 </record>

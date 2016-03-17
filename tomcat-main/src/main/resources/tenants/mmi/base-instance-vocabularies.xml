@@ -53,12 +53,12 @@
         <title>Standard Currency</title>
         <options>
             <option id="USD">US Dollar</option>
-            <option id="CAD">Canadian Dollar</option>
+            <option id="canadiandollar">Canadian Dollar</option>
             <option id="EUR">Euro</option>
             <option id="GBP">Pound Sterling</option>
-            <option id="DKK">Danish Krone</option>
-            <option id="SEK">Swedish Krona</option>
-            <option id="CHF">Swiss Franc</option>
+            <option id="danishkrone">Danish Krone</option>
+            <option id="swedishkrona">Swedish Krona</option>
+            <option id="swissfranc">Swiss Franc</option>
         </options>
     </instance>
     <instance id="vocab-collectionmethod">
