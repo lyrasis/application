@@ -641,6 +641,7 @@
       </repeat>
     </section>
   </section>
+  
   <section id="objectProductionInformation">
     <repeat id="objectProductionDateGroupList/objectProductionDateGroup">
       <group id="objectProductionDate" ui-type="groupfield/structureddate"

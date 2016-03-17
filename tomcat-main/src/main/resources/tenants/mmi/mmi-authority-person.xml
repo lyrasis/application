@@ -8,17 +8,21 @@
             <title-ref>person</title-ref>
             <title>Local Entity</title>
         </instance>
-        <instance id="person-ulan_pa">
-            <web-url>ulan_pa</web-url>
-            <title-ref>ulan_pa</title-ref>
-            <title>ULAN Entity</title>
-        </instance>
     </instances>
     <section id="personNameAuthorityInformation">
         <repeat id="affiliatedPersonOrgGroupList/affiliatedPersonOrgGroup"
                 section="mmi">
-            <field id="affiliatedPersonOrg" autocomplete="person-person,person-ulan_pa" section="mmi" />
-            <field id="affiliatedPersonOrgType" autocomplete="vocab-persontermtype" ui-type="enum" section="mmi" />
+            <field id="affiliatedPersonOrg" autocomplete="person-person" section="mmi">
+            </field>
+            <field id="affiliatedPersonOrgType" section="mmi">
+                <options>
+                    <option id="">Please select a value</option>
+                    <option id="employee">Employee</option>
+                    <option id="founder">Founder</option>
+                    <option id="member">Member</option>
+                    <option id="partner">Partner</option>
+                </options>
+            </field>
         </repeat>
         <field id="lifeSpan" section="mmi"/>
         <repeat id="orgContactNames" section="mmi">
@@ -27,5 +31,17 @@
         <repeat id="orgFunctions" section="mmi">
             <field id="orgFunction" section="mmi" />
         </repeat>
+        <!-- setting custom person structured date component -->
+        <field id="birthDateGroup" in-title="yes" ui-type="groupfield/structureddate" 
+            primarykey="birthDateGroup.dateEarliestSingleYear" ui-func="cspace.personStructuredDate">
+            <selector>personAuthority-birthDate</selector>
+            <title-selector>titleBar-birthDate</title-selector>
+        </field>
+        <!-- setting custom person structured date component -->
+        <field id="deathDateGroup" in-title="yes" ui-type="groupfield/structureddate" 
+            primarykey="deathDateGroup.dateEarliestSingleYear" ui-func="cspace.personStructuredDate">
+            <selector>personAuthority-deathDate</selector>
+            <title-selector>titleBar-deathDate</title-selector>
+        </field>		
     </section>
 </record>

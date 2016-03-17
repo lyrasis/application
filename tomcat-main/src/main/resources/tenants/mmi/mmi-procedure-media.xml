@@ -3,6 +3,13 @@
     <section id="mediaInformation">
         <field id="isPrimary" datatype="boolean" section="mmi" />
         <field id="isOriginalMedia" datatype="boolean" section="mmi" />
-        <field id="mediaStatus" autocomplete="vocab-mediastatus" ui-type="enum" section="mmi" />
+        <field id="mediaStatus" section="mmi">
+            <selector>media-mediaStatus</selector>
+            <options>
+                <option id="">Please select a value</option>
+                <option id="display">Display</option>
+                <option id="private">Private</option>
+            </options>
+        </field>		
     </section>
 </record>
