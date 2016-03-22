@@ -74,7 +74,6 @@
 				<option id="finaledit">Final edit</option>
 				<option id="completedpublish">Completed/Publish</option>
 				<option id="completeddonotpublish">Completed/Do Not Publish</option>
-				<option id="completeddonotpublish">Bogus/Do Not Publish</option>
 			</options>
 		</field>
 	</section>
