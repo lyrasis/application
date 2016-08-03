@@ -3,16 +3,22 @@
         works_mmi:http://collectionspace.org/services/work/local/mmi,works_mmi
     </services-record-path>
     <section id="workAuthorityInformation">
-        <field id="mmiGenre" autocomplete="vocab-workgenre" ui-type="enum"
-                section="mmi" />
-        <field id="mmiMedium" ui-search="repeatable" autocomplete="vocab-workmedium" ui-type="enum"
-               section="mmi" />
-        <repeat id="migratedEntityGroupList/migratedEntityGroup"
-                section="mmi">
-            <field id="migratedEntity" autocomplete="person-person"
-                   section="mmi" />
-            <field id="migratedEntityType" autocomplete="vocab-migratedEntityType" ui-type="enum"
-                   section="mmi" />
+        <field id="mmiGenre" autocomplete="vocab-workgenre" ui-type="enum" section="mmi" />
+        <field id="mmiMedium" ui-search="repeatable" autocomplete="vocab-workmedium" ui-type="enum" section="mmi" />
+        <repeat id="migratedEntityGroupList/migratedEntityGroup" section="mmi">
+            <field id="migratedEntity" autocomplete="person-person" section="mmi" />
+            <field id="migratedEntityType" section="mmi">
+                <options>
+                    <option id="" default="yes">Please select a value</option>
+                    <option id="artist">Artist</option>
+                    <option id="director">Director</option>
+                    <option id="publishingcompany">Publishing company</option>
+                    <option id="developer">Developer</option>
+                    <option id="productioncompany">Production company</option>
+                    <option id="networkcableservice">Network/cable service</option>
+                    <option id="distributioncompany">Distribution company</option>
+                </options>
+            </field>
         </repeat>
     </section>
 </record>

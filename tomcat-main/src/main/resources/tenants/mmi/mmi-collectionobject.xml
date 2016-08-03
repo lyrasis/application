@@ -1,130 +1,175 @@
 <record id="collection-object" is-extension="true" generate-services-schema="true" type="record">
-    <services-record-path id="mmi">
-        collectionobjects_mmi:http://collectionspace.org/services/collectionobject/local/mmi,collectionobjects_mmi
-    </services-record-path>
-	
-    <section id="identificationInformation">
-        <field id="administrativeRemarks" section="mmi" datatype="largetext">
-            <selector>object-identification-administrativeRemarks</selector>
-        </field>
-        <field id="provenance" section="mmi" datatype="largetext">
-            <selector>object-identification-provenance</selector>
-        </field>
-        <field id="objectTitle" section="mmi" mini="summary,search,list,relate" in-title="yes">
-            <title-selector>titleBar-object-identification-objectTitle</title-selector>
-            <selector>object-identification-objectTitle</selector>
-        </field>
-        <field id="initialCatalogingCompleted" section="mmi" datatype="boolean">
-            <selector>object-identification-initialCatalogingCompleted</selector>
-        </field>
-        <field id="approvedByCurator" section="mmi" datatype="boolean">
-            <selector>object-identification-approvedByCurator</selector>
-        </field>        
-        <field id="additionalResearchRequired" section="mmi" datatype="boolean">
-            <selector>object-identification-additionalResearchRequired</selector>
-        </field>        
-        <field id="artifactClass" autocomplete="vocab-artifactclassworktype" ui-search="single" ui-type="enum" section="mmi">
-            <selector>object-identification-artifactClass</selector>
-            <!-- make the term item '~Undetermined' the default value -->
-            <enum>
-                <default>urn:cspace:movingimage.us:vocabularies:name(artifactclassworktype):item:name(wt350)'~Undetermined'</default>
-            </enum>
-        </field>
-        <field id="workType" autocomplete="vocab-artifactclassworktype" ui-type="enum" ui-search="single" section="mmi">
-            <selector>object-identification-workType</selector>
-        </field>
-        <field id="caption" section="mmi">
-            <selector>object-identification-caption</selector>
-        </field>
-        <!--
+	<services-record-path id="mmi"> collectionobjects_mmi:http://collectionspace.org/services/collectionobject/local/mmi,collectionobjects_mmi </services-record-path>
+
+	<section id="identificationInformation">
+		<field id="administrativeRemarks" section="mmi" datatype="largetext">
+			<selector>object-identification-administrativeRemarks</selector>
+		</field>
+		<field id="provenance" section="mmi" datatype="largetext">
+			<selector>object-identification-provenance</selector>
+		</field>
+		<field id="objectTitle" section="mmi" mini="summary,search,list,relate" in-title="yes">
+			<title-selector>titleBar-object-identification-objectTitle</title-selector>
+			<selector>object-identification-objectTitle</selector>
+		</field>
+		<field id="initialCatalogingCompleted" section="mmi" datatype="boolean">
+			<selector>object-identification-initialCatalogingCompleted</selector>
+		</field>
+		<field id="approvedByCurator" section="mmi" datatype="boolean">
+			<selector>object-identification-approvedByCurator</selector>
+		</field>
+		<field id="additionalResearchRequired" section="mmi" datatype="boolean">
+			<selector>object-identification-additionalResearchRequired</selector>
+		</field>
+		<field id="artifactClass" autocomplete="vocab-artifactclassworktype" ui-search="single" ui-type="enum" section="mmi">
+			<selector>object-identification-artifactClass</selector>
+			<!-- make the term item '~Undetermined' the default value -->
+			<enum>
+				<default>urn:cspace:movingimage.us:vocabularies:name(artifactclassworktype):item:name(wt350)'~Undetermined'</default>
+			</enum>
+		</field>
+		<field id="workType" autocomplete="vocab-artifactclassworktype" ui-type="enum" ui-search="single" section="mmi">
+			<selector>object-identification-workType</selector>
+		</field>
+		<field id="caption" section="mmi">
+			<selector>object-identification-caption</selector>
+		</field>
+		<!--
 			Overriding this field defined first in defaults/base-collectionobject.xml
 		-->
-        <repeat id="otherNumberList/otherNumber">
-            <selector>object-identification-otherNumbers</selector>
-            <field id="numberValue" in-tab="yes">
-                <selector>object-identification-other-number</selector>
-            </field>
-            <!-- change autocomplete to use vocab-numbertype -->
-            <field id="numberType" in-tab="yes" autocomplete="vocab-numbertype" ui-type="enum" seperate_ui_container="true">
-                <selector>object-identification-other-number-type</selector>
-            </field>
-        </repeat>
-    </section>
-    
-    <section id="descriptionInformation">
-        <!--
+		<repeat id="otherNumberList/otherNumber">
+			<selector>object-identification-otherNumbers</selector>
+			<field id="numberValue" in-tab="yes">
+				<selector>object-identification-other-number</selector>
+			</field>
+			<!-- change autocomplete to use vocab-numbertype -->
+			<field id="numberType" in-tab="yes" autocomplete="vocab-numbertype" ui-type="enum" seperate_ui_container="true">
+				<selector>object-identification-other-number-type</selector>
+			</field>
+		</repeat>
+		<repeat id="responsibleDepartments" has-primary="yes">
+			<selector>object-identification-responsible-department</selector>
+			<!-- updated option values -->
+			<field id="responsibleDepartment" ui-search="repeatable" mini="search" seperate_ui_container="true">
+				<selector>object-identification-responsible-department</selector>
+				<options>
+					<option id="notyetassigned" default="yes">Not yet assigned</option>
+					<option id="distribution">Distribution</option>
+					<option id="exhibition">Exhibition</option>
+					<option id="industryasawhole">Industry (as a whole)</option>
+					<option id="marketing">Marketing</option>
+					<option id="merchandising">Merchandising</option>
+					<option id="production">Production</option>
+					<option id="reception">Reception</option>
+					<option id="worksofart">Works of art</option>
+				</options>
+			</field>
+		</repeat>
+		<field id="recordStatus" ui-search="repeatable" seperate_ui_container="true">
+			<!-- updated option values -->
+			<selector>object-identification-record-status</selector>
+			<options>
+				<option id="new" default="yes">New</option>
+				<option id="firstedit">First edit</option>
+				<option id="finaledit">Final edit</option>
+				<option id="completedpublish">Completed/Publish</option>
+				<option id="completeddonotpublish">Completed/Do Not Publish</option>
+			</options>
+		</field>
+	</section>
+
+	<section id="descriptionInformation">
+		<repeat id="mmiInscriptionContents" has-primary="yes" section="mmi">
+			<field id="mmiInscriptionContent" section="mmi">
+				<selector>object-description-mmiInscriptionContent</selector>
+			</field>
+		</repeat>
+		<section id="contentInformation">
+			<repeat id="contentEntityList/contentEntityGroup" section="mmi">
+				<field id="contentEntity" autocomplete="person-person" section="mmi">
+					<selector>object-description-contentEntity</selector>
+				</field>
+				<field id="contentEntityType" section="mmi">
+					<selector>object-description-contentEntityType</selector>
+					<options>
+						<option id="">Please select a value</option>
+						<option id="depicts">Depicts</option>
+						<option id="references">References</option>
+						<option id="seealso">See also</option>
+					</options>
+				</field>
+				<field id="contentEntityNote" section="mmi">
+					<selector>object-description-contentEntityNote</selector>
+				</field>
+			</repeat>
+			<!--
 			This repeatable field group conflicts with the "contentWorksGroupList/contentWorksGroup" of
 			the Variable Media schema extension.
 		-->
-        <repeat id="mmiContentWorksGroupList/mmiContentWorksGroup" section="mmi">
-            <field id="contentWork" autocomplete="work-work" section="mmi" />
-            <field id="contentWorkType" autocomplete="vocab-worktype"
-                   ui-type="enum" section="mmi">
-                <enum>
-                    <blank-value>Please select a value</blank-value>
-                </enum>
-            </field>
-            <field id="contentWorkNote" ui-type="text" section="mmi" datatype="largetext" />
-        </repeat>
-		
-        <repeat id="copyrightStatements" section="mmi">
-            <field id="copyrightStatement" section="mmi" datatype="largetext" />
-        </repeat>
-        
-        <repeat id="mmiInscriptionContents" has-primary="yes" section="mmi">
-            <field id="mmiInscriptionContent" section="mmi">
-                <selector>object-description-mmiInscriptionContent</selector>
-            </field>
-        </repeat>
-        <repeat id="formats" section="mmi">
-            <field id="format" autocomplete="vocab-format" ui-type="enum" section="mmi">
-                <selector>object-description-format</selector>
-            </field>
-        </repeat>
-        <repeat id="mmiMaterials" has-primary="yes" section="mmi">
-            <field id="mmiMaterial" autocomplete="vocab-material" ui-type="enum" section="mmi">
-                <selector>object-description-mmiMaterial</selector>
-            </field>
-        </repeat>        
-    </section>
-    
-    <section id="objectProductionInformation">
-        <repeat id="objProdEntityList/objProdEntityGroup" section="mmi">
-            <!-- add autocomplete to only use person-person; remove ui-search -->
-            <field id="objProdEntity" autocomplete="person-person" section="mmi">
-                <selector>object-production-objProdEntity</selector>
-            </field>
-            <!-- add autocomplete to use vocab-productionrole -->
-            <field id="objProdEntityRole" autocomplete="vocab-productionrole" ui-type="enum" section="mmi">
-                <selector>object-production-objProdEntityRole</selector>
-            </field>
-            <field id="objProdEntityNote" section="mmi">
-                <selector>object-production-objProdEntityNote</selector>
-            </field>
-        </repeat>
-        <repeat id="mmiTechniques" has-primary="yes" section="mmi">
-            <field id="mmiTechnique" section="mmi" autocomplete="vocab-technique" ui-type="enum">
-                <selector>object-production-mmiTechnique</selector>
-            </field>
-        </repeat>
-    </section>
-    
-    <section id="contentInformation">
-        <repeat id="contentEntityList/contentEntityGroup" section="mmi">
-            <field id="contentEntity" section="mmi" autocomplete="person-person" />
-            <field id="contentEntityType" section="mmi"
-                   autocomplete="vocab-contententitytype" ui-type="enum" >
-                <enum>
-                    <blank-value>Please select a value</blank-value>
-                </enum>
-            </field>
-            <field id="contentEntityNote" section="mmi" datatype="largetext" />
-        </repeat>
-    </section>
-	
-    <section id="objectHistoryAssociationInformation">
-        <field id="historicalnotesources" section="mmi" autocomplete="citation-citation">
+			<repeat id="mmiContentWorksGroupList/mmiContentWorkGroup" section="mmi">
+				<field id="contentWork" autocomplete="work-work" section="mmi"></field>
+				<field id="contentWorkType" autocomplete="vocab-contentworktype" ui-type="enum" section="mmi">
+					<enum>
+						<blank-value>Please select a value</blank-value>
+					</enum>
+				</field>
+				<field id="contentWorkNote" ui-type="text" section="mmi" datatype="largetext"></field>
+			</repeat>
+		</section>
+		<repeat id="contentPlaces">
+			<!-- adding new autocomplete -->
+			<field id="contentPlace" autocomplete="place-place">
+				<selector>object-description-content-place</selector>
+			</field>
+		</repeat>		
+	</section>
+
+	<section id="objectProductionInformation">
+		<repeat id="objProdEntityList/objProdEntityGroup" section="mmi">
+			<!-- add autocomplete to only use person-person; remove ui-search -->
+			<field id="objProdEntity" autocomplete="person-person" section="mmi">
+				<selector>object-production-objProdEntity</selector>
+			</field>
+			<!-- add autocomplete to use vocab-productionrole -->
+			<field id="objProdEntityRole" autocomplete="vocab-productionrole" ui-type="enum" section="mmi">
+				<selector>object-production-objProdEntityRole</selector>
+			</field>
+			<field id="objProdEntityNote" section="mmi">
+				<selector>object-production-objProdEntityNote</selector>
+			</field>
+		</repeat>
+		<repeat id="mmiTechniques" has-primary="yes" section="mmi">
+			<field id="mmiTechnique" section="mmi" autocomplete="vocab-technique" ui-type="enum">
+				<selector>object-production-mmiTechnique</selector>
+			</field>
+		</repeat>
+		<repeat id="copyrightStatements" section="mmi">
+			<field id="copyrightStatement" section="mmi" datatype="largetext"></field>
+		</repeat>
+		<repeat id="formats" section="mmi">
+			<field id="format" autocomplete="vocab-format" ui-type="enum" section="mmi">
+				<selector>object-description-format</selector>
+			</field>
+		</repeat>
+		<repeat id="mmiMaterials" has-primary="yes" section="mmi">
+			<field id="mmiMaterial" autocomplete="vocab-material" ui-type="enum" section="mmi">
+				<selector>object-description-mmiMaterial</selector>
+			</field>
+		</repeat>
+	</section>
+
+	<section id="objectHistoryAssociationInformation">
+		<field id="historicalnotesources" section="mmi">
 			<selector>object-history-association-historicalNoteSources</selector>
 		</field>
-    </section>
+		<section id="associationInformation">
+			<repeat id="assocOrganizationGroupList/assocOrganizationGroup">
+				<!-- add autocomplete to only use person-person -->
+				<field id="assocOrganization" autocomplete="person-person"></field>
+				<!-- add autocomplete to use vocab-associatedentitytype -->
+				<field id="assocOrganizationType" ui-type="enum" autocomplete="vocab-associatedentitytype"></field>
+				<field id="assocOrganizationNote"></field>
+			</repeat>
+		</section>		
+	</section>
 </record>

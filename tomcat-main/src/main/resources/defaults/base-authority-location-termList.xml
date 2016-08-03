@@ -1,4 +1,3 @@
-
 <record id="preferredSLA" in-recordlist="no" separate-record="false">
     <hassoftdelete>true</hassoftdelete>
     <section id="termInformation">

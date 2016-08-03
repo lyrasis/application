@@ -14,15 +14,31 @@
             </field>
         </repeat>
         <field id="acquisitionMethod">
+			<selector>acquisition-acquisition-method</selector>
             <options>
-                <option id="gift" default="yes">Gift</option>
+                <option id="">Please select a value</option>
+                <option id="gift">Gift</option>
                 <option id="purchase">Purchase</option>
                 <option id="bequest">Bequest</option>
                 <option id="loan">Loan</option>
-                <option id="restricted-gift">Restricted Gift</option>
+                <option id="restrictedgifts">Restricted gifts</option>
             </options>
         </field>
-
         <field id="acquisitionExtent" section="mmi" datatype="largetext" />
+		<repeat id="acquisitionSources">
+			<field id="acquisitionSource" mini="summary,search,list,relate" in-title="yes"
+				ui-search="repeatable" autocomplete="person-person">
+				<selector>acquisition-acquisitionSource</selector>
+			</field>
+		</repeat>
+        <repeat id="owners">
+            <!-- change autocomplete to only use person-person -->
+            <field id="owner" autocomplete="person-person"/>
+        </repeat>
+        <repeat id="acquisitionFundingList/acquisitionFunding">
+            <!-- change autocomplete to only use person-person -->
+            <field id="acquisitionFundingSource" autocomplete="person-person"/>
+        </repeat>
+		
     </section>
 </record>
