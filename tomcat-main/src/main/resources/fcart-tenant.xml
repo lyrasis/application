@@ -30,6 +30,7 @@
 			<include src="base-procedure-valuationcontrol.xml"/>
 			<include src="base-procedure-movement.xml"/>
 			<include src="base-procedure-objectexit.xml"/>
+			<include src="base-procedure-conservation.xml"/>
 
 			<include src="base-authority-contact.xml"/>
                         <!-- IMPORTANT: *-termList.xml files MUST precede their equivalent files. -->
@@ -66,6 +67,7 @@
 
 			<include src="base-other-dimension.xml,extensions/fcart-profile-other-dimension.xml"
 					 merge="xmlmerge.properties" />
+			<include src="base-other-address.xml"/>					 
 			<include src="base-other-hierarchy.xml"/>
 			<include src="base-other-idgenerator.xml"/>
 			<include src="base-other-structureddate.xml"/>
