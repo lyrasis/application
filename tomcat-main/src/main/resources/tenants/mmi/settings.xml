@@ -1,6 +1,6 @@
 <settings>
     <admin>
-        <username>admin@cspace.movingimage.us</username>
+        <username>admin@movingimage.us</username>
         <password>Administrator</password>
         <tenant>42</tenant>
         <tenantname>mmi</tenantname>
@@ -24,7 +24,7 @@
     </admin>
     <email>
         <baseurl>https://cspace.movingimage.us</baseurl>
-        <from>admin@cspace.movingimage.us</from>
+        <from>admin@movingimage.us</from>
         <to></to>
         <!-- if specified then all emails will send to this address - used for debugging -->
         <smtp>
@@ -55,6 +55,7 @@
                 <domain>mmi</domain>
                 <version>4.2</version>
                 <display-name>Collectionspace MMI Tenant</display-name>
+				<create-disabled>false</create-disabled>
             </tenant>
             <repository>
                 <domain>mmi</domain>

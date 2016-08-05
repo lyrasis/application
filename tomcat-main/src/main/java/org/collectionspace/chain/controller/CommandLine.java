@@ -534,6 +534,7 @@ public class CommandLine {
 		} catch (Exception e) {
 			result = String.format("Error encountered generating service bindings for '%s' tenant configuration.",
 					tenantConfigFile.getAbsolutePath());
+			e.printStackTrace();
 		}
 		
 		return result;
