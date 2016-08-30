@@ -55,7 +55,7 @@
                 <domain>gsd</domain>
                 <version>0.1</version>
                 <display-name>CollectionSpace GSD Tenant</display-name>
-				<create-disabled>false</create-disabled>
+				<create-disabled>${CSPACE_GSD_CREATE_DISABLED_OPT}</create-disabled>
             </tenant>
             <repository>
                 <domain>gsd</domain>

@@ -55,7 +55,7 @@
                 <domain>risd</domain>
                 <version>0.1</version>
                 <display-name>CollectionSpace RISD Tenant</display-name>
-				<create-disabled>false</create-disabled>
+				<create-disabled>${CSPACE_RISD_CREATE_DISABLED_OPT}</create-disabled>
             </tenant>
             <repository>
                 <domain>risd</domain>

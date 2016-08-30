@@ -54,7 +54,7 @@
 				<name>cspace.gsbflm.org</name>
 				<version>0.1</version>
 				<display-name>Collectionspace GSBF Tenant</display-name>
-                <create-disabled>false</create-disabled>
+                <create-disabled>${CSPACE_GSBF_CREATE_DISABLED_OPT}</create-disabled>
 			</tenant>
 			<repository>
 				<domain>gsbf</domain>

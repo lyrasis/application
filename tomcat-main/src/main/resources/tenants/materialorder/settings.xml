@@ -55,7 +55,7 @@
                 <domain>materialorder</domain>
                 <version>0.1</version>
                 <display-name>CollectionSpace Material Order Tenant</display-name>
-				<create-disabled>false</create-disabled>
+				<create-disabled>${CSPACE_MATERIALORDER_CREATE_DISABLED_OPT}</create-disabled>
             </tenant>
             <repository>
                 <domain>materialorder</domain>

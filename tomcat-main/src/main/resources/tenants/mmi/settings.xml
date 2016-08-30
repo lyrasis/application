@@ -55,7 +55,7 @@
                 <domain>mmi</domain>
                 <version>4.2</version>
                 <display-name>Collectionspace MMI Tenant</display-name>
-				<create-disabled>false</create-disabled>
+				<create-disabled>${CSPACE_MMI_CREATE_DISABLED_OPT}</create-disabled>
             </tenant>
             <repository>
                 <domain>mmi</domain>
