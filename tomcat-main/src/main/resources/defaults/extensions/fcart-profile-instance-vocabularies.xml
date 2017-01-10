@@ -343,26 +343,4 @@
             <option id="review">Review</option>
         </options>
     </instance>
-	<instance id="vocab-mediaviewtype">
-		<web-url>mediaviewtype</web-url>
-		<title-ref>mediaviewtype</title-ref>
-		<title>Media View Type</title>
-		<options>
-			<option id="aerial">Aerial</option>
-			<option id="back">Back</option>
-			<option id="closeup">Close-up</option>
-			<option id="detail">Detail</option>
-			<option id="distant">Distant</option>
-			<option id="exterior">Exterior</option>
-			<option id="front">Front</option>
-			<option id="interior">Interior</option>
-			<option id="oblique">Oblique</option>
-			<option id="overhead">Overhead</option>			
-			<option id="profiles">Profiles(figures)</option>
-			<option id="rear">Rear</option>
-			<option id="side">Side</option>
-			<option id="top">Top</option>
-			<option id="viewsfrombelow">Views from below</option>
-		</options>
-	</instance>
 </instances>
