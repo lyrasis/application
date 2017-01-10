@@ -41,8 +41,9 @@
 			
 			<include src="base-procedure-loanout.xml,mmi-procedure-loanout.xml"
 					merge="xmlmerge-mmi.properties"/>
-					
-			<include src="base-procedure-media.xml,mmi-procedure-media.xml"
+			
+			<!-- Media -->
+			<include src="base-procedure-media.xml,mmi-procedure-media.xml,extensions/fcart-profile-procedure-media2.xml"
 					 merge="xmlmerge.properties" />
 					 
 			<include src="base-procedure-valuationcontrol.xml"/>

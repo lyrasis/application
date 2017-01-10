@@ -1,0 +1,11 @@
+<record id="media" is-extension="true" type="record,procedure">
+	<services-record-path id="fcart">media_fcart:http://collectionspace.org/services/media/domain/fcart,media_fcart</services-record-path>
+	<section id="mediaInformation">
+    	<field id="mediaViewType" autocomplete="vocab-mediaviewtype" ui-search="single" ui-type="enum" section="fcart">
+    		<enum>
+    			<blank-value>Please select a value</blank-value>
+    		</enum>
+    		<selector>media-mediaViewType</selector>
+    	</field>
+    </section>
+</record>

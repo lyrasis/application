@@ -1,17 +1,17 @@
 <record id="media" is-extension="true" type="record,procedure">
-    <services-record-path id="mmi">media_mmi:http://collectionspace.org/services/media/local/mmi,media_mmi</services-record-path>
-    <section id="mediaInformation">
-        <field id="isPrimary" datatype="boolean" section="mmi" />
-        <field id="isOriginalMedia" datatype="boolean" section="mmi" />
-        <field id="mediaStatus" section="mmi">
-            <selector>media-mediaStatus</selector>
-            <options>
-                <option id="">Please select a value</option>
-                <option id="display">Display</option>
-                <option id="private">Private</option>
-            </options>
-        </field>
-        <field id="creator" ui-search="repeatable" autocomplete="person-person"></field>
-        <field id="rightsHolder" ui-search="repeatable" autocomplete="person-person"></field>		
-    </section>
+	<services-record-path id="mmi">media_mmi:http://collectionspace.org/services/media/local/mmi,media_mmi</services-record-path>
+	<section id="mediaInformation">
+		<field id="isPrimary" datatype="boolean" section="mmi"></field>
+		<field id="isOriginalMedia" datatype="boolean" section="mmi"></field>
+		<field id="mediaStatus" section="mmi">
+			<selector>media-mediaStatus</selector>
+			<options>
+				<option id="">Please select a value</option>
+				<option id="display">Display</option>
+				<option id="private">Private</option>
+			</options>
+		</field>
+		<field id="creator" ui-search="repeatable" autocomplete="person-person"></field>
+		<field id="rightsHolder" ui-search="repeatable" autocomplete="person-person"></field>
+	</section>
 </record>
