@@ -12,13 +12,13 @@
 			<title-selector>titleBar-object-identification-objectTitle</title-selector>
 			<selector>object-identification-objectTitle</selector>
 		</field>
-		<field id="initialCatalogingCompleted" section="mmi" datatype="boolean">
+		<field id="initialCatalogingCompleted" section="mmi" datatype="boolean" ui-search="single">
 			<selector>object-identification-initialCatalogingCompleted</selector>
 		</field>
-		<field id="approvedByCurator" section="mmi" datatype="boolean">
+		<field id="approvedByCurator" section="mmi" datatype="boolean" ui-search="single">
 			<selector>object-identification-approvedByCurator</selector>
 		</field>
-		<field id="additionalResearchRequired" section="mmi" datatype="boolean">
+		<field id="additionalResearchRequired" section="mmi" datatype="boolean" ui-search="single">
 			<selector>object-identification-additionalResearchRequired</selector>
 		</field>
 		<field id="artifactClass" autocomplete="vocab-artifactclassworktype" ui-search="single" ui-type="enum" section="mmi">
@@ -107,7 +107,7 @@
 			the Variable Media schema extension.
 		-->
 			<repeat id="mmiContentWorksGroupList/mmiContentWorkGroup" section="mmi">
-				<field id="contentWork" autocomplete="work-work" section="mmi"></field>
+				<field id="contentWork" autocomplete="work-work" ui-search="repeatable" section="mmi" ></field>
 				<field id="contentWorkType" autocomplete="vocab-contentworktype" ui-type="enum" section="mmi">
 					<enum>
 						<blank-value>Please select a value</blank-value>

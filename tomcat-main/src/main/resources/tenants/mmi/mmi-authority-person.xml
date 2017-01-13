@@ -27,21 +27,11 @@
         <field id="lifeSpan" section="mmi"/>
         <repeat id="orgContactNames" section="mmi">
             <field id="orgContactName" autocomplete="person-person" section="mmi" />
+        	<selector>person-orgContactName</selector>
         </repeat>
         <repeat id="orgFunctions" section="mmi">
             <field id="orgFunction" section="mmi" />
+        	<selector>person-orgFunction</selector>
         </repeat>
-        <!-- setting custom person structured date component -->
-        <field id="birthDateGroup" in-title="yes" ui-type="groupfield/structureddate" 
-            primarykey="birthDateGroup.dateEarliestSingleYear" ui-func="cspace.personStructuredDate">
-            <selector>personAuthority-birthDate</selector>
-            <title-selector>titleBar-birthDate</title-selector>
-        </field>
-        <!-- setting custom person structured date component -->
-        <field id="deathDateGroup" in-title="yes" ui-type="groupfield/structureddate" 
-            primarykey="deathDateGroup.dateEarliestSingleYear" ui-func="cspace.personStructuredDate">
-            <selector>personAuthority-deathDate</selector>
-            <title-selector>titleBar-deathDate</title-selector>
-        </field>		
     </section>
 </record>

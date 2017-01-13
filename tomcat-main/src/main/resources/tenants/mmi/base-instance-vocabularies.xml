@@ -1051,4 +1051,16 @@
 			<option id="wt522">(Video players, recorders and related equipment) Video player and recorder related equipment</option>
 		</options>
 	</instance>
+	<instance id="vocab-organizationtype">
+		<web-url>organizationtype</web-url>
+		<title-ref>organizationtype</title-ref>
+		<title>Organization Types</title>
+		<options>
+			<option id="corporatebody">corporate body</option>
+			<option id="family">family</option>
+			<option id="repository">repository</option>
+			<option id="studio">studio</option>
+			<option id="workshop">workshop</option>
+		</options>
+	</instance>
 </instances>
