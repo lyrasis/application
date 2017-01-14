@@ -13,7 +13,7 @@
                 <selector>acquisition-mmiAcquisitionDate</selector>
             </field>
         </repeat>
-        <field id="acquisitionMethod">
+        <field id="acquisitionMethod" ui-search="repeatable" seperate_ui_container="true">
 			<selector>acquisition-acquisition-method</selector>
             <options>
                 <option id="">Please select a value</option>
@@ -37,7 +37,7 @@
         </repeat>
         <repeat id="acquisitionFundingList/acquisitionFunding">
             <!-- change autocomplete to only use person-person -->
-            <field id="acquisitionFundingSource" autocomplete="person-person"/>
+            <field id="acquisitionFundingSource" autocomplete="person-person" ui-search="repeatable"/>
         </repeat>
 		
     </section>
