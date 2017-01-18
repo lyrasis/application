@@ -105,15 +105,20 @@
 			<!--
 			This repeatable field group conflicts with the "contentWorksGroupList/contentWorksGroup" of
 			the Variable Media schema extension.
-		-->
-			<repeat id="mmiContentWorksGroupList/mmiContentWorkGroup" section="mmi">
-				<field id="contentWork" autocomplete="work-work" ui-search="repeatable" section="mmi" ></field>
+			-->
+			<repeat id="contentWorkList/contentWorkGroup" section="mmi">
+				<field id="contentWork" autocomplete="work-work" ui-search="repeatable" section="mmi" >
+					<selector>object-content-contentWork</selector>
+				</field>
 				<field id="contentWorkType" autocomplete="vocab-contentworktype" ui-type="enum" section="mmi">
+					<selector>object-content-contentWorkType</selector>
 					<enum>
 						<blank-value>Please select a value</blank-value>
 					</enum>
 				</field>
-				<field id="contentWorkNote" ui-type="text" section="mmi" datatype="largetext"></field>
+				<field id="contentWorkNote" ui-type="text" datatype="largetext" section="mmi">
+					<selector>object-content-contentWorkNote</selector>
+				</field>
 			</repeat>
 		</section>
 		<repeat id="contentPlaces">
@@ -125,6 +130,12 @@
 	</section>
 
 	<section id="objectProductionInformation">
+		<repeat id="objectProductionDateGroupList/objectProductionDateGroup">
+            <!-- setting custom person structured date component -->
+            <group id="objectProductionDate" xxx-services-no-repeat="true"
+                ui-type="groupfield/structureddate" primarykey="dateDisplayDate"
+                ui-func="cspace.catalogingStructuredDate"/>
+        </repeat>
 		<repeat id="objProdEntityList/objProdEntityGroup" section="mmi">
 			<!-- add autocomplete to only use person-person; remove ui-search -->
 			<field id="objProdEntity" autocomplete="person-person" section="mmi">
@@ -169,6 +180,15 @@
 				<!-- add autocomplete to use vocab-associatedentitytype -->
 				<field id="assocOrganizationType" ui-type="enum" autocomplete="vocab-associatedentitytype"></field>
 				<field id="assocOrganizationNote"></field>
+			</repeat>
+			<repeat id="assocDateGroupList/assocDateGroup">
+				<selector>object-history-association-assocDateGroup</selector>
+				<!-- setting custom person structured date component -->
+				<group id="assocStructuredDateGroup" ui-type="groupfield/structureddate" primarykey="dateDisplayDate" ui-func="cspace.catalogingStructuredDate">
+					<selector>object-history-association-assocDate</selector>
+				</group>
+				<field id="assocDateType"></field>
+				<field id="assocDateNote"></field>
 			</repeat>
 		</section>		
 	</section>
