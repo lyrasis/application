@@ -1,6 +1,6 @@
 <settings>
   <admin>
-    <username>admin@breckenridge.lyrasistechnology.org</username>
+    <username>admin@staff.breckenridgearchives.com</username>
     <password>Administrator</password>
     <tenant>100005</tenant>
     <tenantname>breckenridge</tenantname>
@@ -24,7 +24,7 @@
   </admin>
   <email>
     <baseurl>http://localhost:@JEE_PORT@</baseurl>
-    <from>admin@breckenridge.lyrasistechnology.org</from>
+    <from>admin@staff.breckenridgearchives.com</from>
     <to></to>
     <!-- if specified then all emails will send to this address - used for debugging -->
     <smtp>
@@ -51,7 +51,7 @@
       <url>http://localhost:@JEE_PORT@/cspace-services</url>
       <tenant>
         <id>100005</id>
-        <name>breckenridge.lyrasistechnology.org</name>
+        <name>staff.breckenridgearchives.com</name>
         <version>0.1</version>
         <display-name>Collectionspace BRECKENRIDGE Tenant</display-name>
         <create-disabled>${CSPACE_BRECKENRIDGE_CREATE_DISABLED_OPT}</create-disabled>
