@@ -1,0 +1,111 @@
+<record id="collection-object" in-findedit="yes" cms-type="default" generate-services-schema="true">
+  <section id="identificationInformation">
+    <repeat id="otherNumberList/otherNumber">
+      <field id="numberType" in-tab="yes" seperate_ui_container="true">
+        <selector>object-identification-other-number-type</selector>
+        <options>
+          <option id="">Please select a value</option>
+          <option id="isbn">ISBN</option>
+          <option id="issn">ISSN</option>
+          <option id="lccn">LCCN</option>
+          <option id="lender">Lender</option>
+          <option id="obsolete">Obsolete</option>
+          <option id="previous">Previous</option>
+          <option id="serial">Serial</option>
+          <option id="unknown">Unknown</option>
+        </options>
+      </field>
+    </repeat>
+    <repeat id="responsibleDepartments" has-primary="yes">
+      <selector>object-identification-responsible-department</selector>
+      <field id="responsibleDepartment" ui-search="repeatable" mini="search,list"
+        seperate_ui_container="true">
+        <selector>object-identification-responsible-department</selector>
+        <options>
+          <option id="">Please select a value</option>
+          <option id="antiquities">Antiquities</option>
+          <option id="architecture-design">Architecture and Design</option>
+          <option id="archive">Archive</option>
+          <option id="art">Art</option>
+          <option id="decorative-arts">Decorative Arts</option>
+          <option id="ethnography">Ethnography</option>
+          <option id="geology">Geology</option>
+          <option id="herpetology">Herpetology</option>
+          <option id="history">History</option>
+          <option id="map">Map</option>
+          <option id="media-performance-art">Media and Performance Art</option>
+          <option id="oral-history">Oral History</option>
+          <option id="paintings-sculpture">Paintings and Sculpture</option>
+          <option id="paleobotany">Paleobotany</option>
+          <option id="photographs">Photographs</option>
+          <option id="prints-drawings">Prints and Drawings</option>
+        </options>
+      </field>
+    </repeat>
+    <field id="collection" ui-search="repeatable" seperate_ui_container="true">
+      <selector>object-identification-collection</selector>
+    </field>
+    <repeat id="titleGroupList/titleGroup">
+      <!-- selector>collection-object-titleGroup</selector -->
+      <field id="title" ui-search="repeatable" in-title="yes" mini="search,list">
+        <title-selector>titleBar-object-identification-object-title</title-selector>
+        <selector>object-identification-object-title</selector>
+      </field>
+      <field id="titleLanguage" autocomplete="vocab-languages" ui-type="enum">
+        <enum>
+          <default>urn:cspace:core.collectionspace.org:vocabularies:name(languages):item:name(eng)'English'</default>
+        </enum>
+        <selector>object-identification-object-title-language</selector>
+      </field>
+
+      <repeat id="titleTranslationSubGroupList/titleTranslationSubGroup">
+        <field id="titleTranslation">
+          <selector>object-identification-object-title-translation</selector>
+        </field>
+        <field id="titleTranslationLanguage" autocomplete="vocab-languages" ui-type="enum">
+          <enum>
+            <default>urn:cspace:core.collectionspace.org:vocabularies:name(languages):item:name(eng)'English'</default>
+            <blank-value>Please select a value</blank-value>
+          </enum>
+        </field>
+      </repeat>
+
+      <field id="titleType" seperate_ui_container="true">
+        <selector>object-identification-object-title-type</selector>
+        <options>
+          <option id="">Please select a value</option>
+           <option id="assigned">assigned by artist</option>
+           <option id="brief-exhibit-label">brief exhibit label</option>
+           <option id="collection">collection</option>
+           <option id="full-exhibit-label">full exhibit label</option>
+           <option id="generic">generic</option>
+           <option id="popular">popular</option>
+           <option id="series">series</option>
+           <option id="spine-label">spine label</option>
+           <option id="subtitle">subtitle</option>
+           <option id="trade">trade</option>
+        </options>
+      </field>
+    </repeat>
+
+    <repeat id="objectStatusList" services-type-anonymous="false">
+      <field id="objectStatus" ui-search="repeatable" seperate_ui_container="true">
+        <selector>object-description-object-status</selector>
+        <options>
+          <option id="">Please select a value</option>
+          <option id="borndigital">born digital</option>
+          <option id="copy">copy</option>
+          <option id="forgery">forgery</option>
+          <option id="holotype">holotype</option>
+          <option id="original">original</option>
+          <option id="other">other</option>
+          <option id="paralectotype">paralectotype</option>
+          <option id="paratype">paratype</option>
+          <option id="photocopy">photocopy</option>
+          <option id="scan">scan</option>
+          <option id="type">type</option>
+        </options>
+      </field>
+    </repeat>
+  </section>
+</record>
