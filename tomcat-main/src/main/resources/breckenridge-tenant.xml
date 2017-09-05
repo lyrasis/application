@@ -11,12 +11,12 @@
 		<records>
 			<enum-blank>Please select a value</enum-blank>
 
-			<include src="base-collectionobject.xml, breckenridge-collectionobject.xml" merge="xmlmerge.properties"/>
+			<include src="base-collectionobject.xml,breckenridge-collectionobject.xml" merge="xmlmerge.properties"/>
 			<include src="base-authority.xml"/>
 
 			<include src="base-procedure-acquisition.xml"/>
 			<include src="base-procedure-blobs.xml"/>
-			<include src="base-procedure-conditioncheck.xml, breckrenridge-procedure-conditioncheck.xml" merge="xmlmerge.properties"/>
+			<include src="base-procedure-conditioncheck.xml,breckenridge-conditioncheck.xml" merge="xmlmerge.properties"/>
 			<include src="base-procedure-exhibition.xml"/>
 			<include src="base-procedure-groups.xml"/>
 			<include src="base-procedure-intake.xml"/>
@@ -60,7 +60,7 @@
 			<include src="base-authz-userrole.xml"/>
 			<include src="base-authz-users.xml"/>
 
-			<include src="base-other-dimension.xml, breckenridge-other-dimension.xml" merge="xmlmerge.properties"/>
+			<include src="base-other-dimension.xml,breckenridge-other-dimension.xml" merge="xmlmerge.properties"/>
 			<include src="base-other-address.xml"/>
 			<include src="base-other-hierarchy.xml"/>
 			<include src="base-other-idgenerator.xml"/>

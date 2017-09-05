@@ -1,6 +1,5 @@
 <record id="conditioncheck">
     <section id="objectConditionInformation">
-        <repeat id="conditionCheckGroupList/conditionCheckGroup">
             <field id="condition" ui-search="repeatable" seperate_ui_container="true" mini="summary,search,list,relate">
                 <selector>conditioncheck-condition</selector>
                 <options>
@@ -17,6 +16,5 @@
                     <option id="injeopardy">In jeopardy</option>
                 </options>
             </field>
-        </repeat>
     </section>
 </record>

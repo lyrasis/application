@@ -1,4 +1,4 @@
-<record id="collection-object" in-findedit="yes" cms-type="default" generate-services-schema="true">
+<record id="collection-object">
   <section id="identificationInformation">
     <repeat id="otherNumberList/otherNumber">
       <field id="numberType" in-tab="yes" seperate_ui_container="true">
@@ -16,11 +16,9 @@
         </options>
       </field>
     </repeat>
-    <repeat id="responsibleDepartments" has-primary="yes">
-      <selector>object-identification-responsible-department</selector>
-      <field id="responsibleDepartment" ui-search="repeatable" mini="search,list"
-        seperate_ui_container="true">
-        <selector>object-identification-responsible-department</selector>
+
+   <repeat id="responsibleDepartments">
+      <field id="responsibleDepartment">
         <options>
           <option id="">Please select a value</option>
           <option id="antiquities">Antiquities</option>
@@ -42,36 +40,15 @@
         </options>
       </field>
     </repeat>
+
     <field id="collection" ui-search="repeatable" seperate_ui_container="true">
       <selector>object-identification-collection</selector>
+      <options>
+      </options>
     </field>
+
     <repeat id="titleGroupList/titleGroup">
-      <!-- selector>collection-object-titleGroup</selector -->
-      <field id="title" ui-search="repeatable" in-title="yes" mini="search,list">
-        <title-selector>titleBar-object-identification-object-title</title-selector>
-        <selector>object-identification-object-title</selector>
-      </field>
-      <field id="titleLanguage" autocomplete="vocab-languages" ui-type="enum">
-        <enum>
-          <default>urn:cspace:core.collectionspace.org:vocabularies:name(languages):item:name(eng)'English'</default>
-        </enum>
-        <selector>object-identification-object-title-language</selector>
-      </field>
-
-      <repeat id="titleTranslationSubGroupList/titleTranslationSubGroup">
-        <field id="titleTranslation">
-          <selector>object-identification-object-title-translation</selector>
-        </field>
-        <field id="titleTranslationLanguage" autocomplete="vocab-languages" ui-type="enum">
-          <enum>
-            <default>urn:cspace:core.collectionspace.org:vocabularies:name(languages):item:name(eng)'English'</default>
-            <blank-value>Please select a value</blank-value>
-          </enum>
-        </field>
-      </repeat>
-
       <field id="titleType" seperate_ui_container="true">
-        <selector>object-identification-object-title-type</selector>
         <options>
           <option id="">Please select a value</option>
            <option id="assigned">assigned by artist</option>
@@ -87,10 +64,11 @@
         </options>
       </field>
     </repeat>
+  </section>
 
-    <repeat id="objectStatusList" services-type-anonymous="false">
-      <field id="objectStatus" ui-search="repeatable" seperate_ui_container="true">
-        <selector>object-description-object-status</selector>
+  <section id="descriptionInformation">
+    <repeat id="objectStatusList">
+      <field id="objectStatus">
         <options>
           <option id="">Please select a value</option>
           <option id="borndigital">born digital</option>
