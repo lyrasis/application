@@ -1,0 +1,20 @@
+<record id="conditioncheck">
+    <section id="objectConditionInformation">
+            <field id="condition" ui-search="repeatable" seperate_ui_container="true" mini="summary,search,list,relate">
+                <selector>conditioncheck-condition</selector>
+                <options>
+                    <option id="" default="yes">Please select a value</option>
+                    <option id="excellent">Excellent</option>
+                    <option id="good">Good</option>
+                    <option id="fair">Fair</option>
+                    <option id="poor">Poor</option>
+                    <option id="stable">Stable</option>
+                    <option id="unstable">Unstable</option>
+                    <option id="needsnowork">Needs no work</option>
+                    <option id="exhibitableneedswork">Exhibitable / needs work</option>
+                    <option id="notexhibitablestable">Not exhibitable / stable</option>
+                    <option id="injeopardy">In jeopardy</option>
+                </options>
+            </field>
+    </section>
+</record>
