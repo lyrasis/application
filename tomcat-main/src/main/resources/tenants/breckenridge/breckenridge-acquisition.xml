@@ -1,0 +1,17 @@
+<record id="acquisition">
+  <section id="acquisitionInformation">
+    <field id="acquisitionMethod" ui-search="repeatable" seperate_ui_container="true">
+      <selector>acquisition-acquisition-method</selector>
+      <options>
+        <option id="gift" default="yes">Gift</option>
+        <option id="donation" default="yes">Donation</option>
+        <option id="found_in_collection">Found in Collection</option>
+        <option id="purchase">Purchase</option>
+        <option id="exchange">Exchange</option>
+        <option id="transfer">Transfer</option>
+        <option id="treasure">Treasure</option>
+        <option id="unknown">Unknown</option>
+      </options>
+    </field>
+  </section>
+</record>

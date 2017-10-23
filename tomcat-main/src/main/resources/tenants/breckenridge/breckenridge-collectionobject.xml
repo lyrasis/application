@@ -5,10 +5,12 @@
         <selector>object-identification-other-number-type</selector>
         <options>
           <option id="">Please select a value</option>
+          <option id="frameno">Frame</option>
           <option id="isbn">ISBN</option>
           <option id="issn">ISSN</option>
           <option id="lccn">LCCN</option>
           <option id="lender">Lender</option>
+          <option id="negno">Negative</option>
           <option id="obsolete">Obsolete</option>
           <option id="previous">Previous</option>
           <option id="serial">Serial</option>
