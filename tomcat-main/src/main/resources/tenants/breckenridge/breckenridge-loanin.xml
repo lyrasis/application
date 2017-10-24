@@ -1,5 +1,0 @@
-<record id="loanin">
-  <section id="loaninInformation">
-    <field id="creditLine" ui-search="repeatable"></field>
-  </section>
-</record>
