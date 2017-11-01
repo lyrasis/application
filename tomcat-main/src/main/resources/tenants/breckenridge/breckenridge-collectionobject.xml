@@ -5,6 +5,7 @@
         <selector>object-identification-other-number-type</selector>
         <options>
           <option id="">Please select a value</option>
+          <option id="dpl">DPL</option>
           <option id="frameno">Frame</option>
           <option id="isbn">ISBN</option>
           <option id="issn">ISSN</option>
