@@ -14,7 +14,7 @@
 			<include src="base-collectionobject.xml,breckenridge-collectionobject.xml" merge="xmlmerge.properties"/>
 			<include src="base-authority.xml"/>
 
-			<include src="base-procedure-acquisition.xml"/>
+			<include src="base-procedure-acquisition.xml,breckenridge-acquisition.xml" merge="xmlmerge.properties"/>
 			<include src="base-procedure-blobs.xml"/>
 			<include src="base-procedure-conditioncheck.xml,breckenridge-conditioncheck.xml" merge="xmlmerge.properties"/>
 			<include src="base-procedure-exhibition.xml"/>
@@ -22,7 +22,7 @@
 			<include src="base-procedure-intake.xml"/>
 			<include src="base-procedure-loanin.xml"/>
 			<include src="base-procedure-loanout.xml"/>
-			<include src="base-procedure-media.xml"/>
+			<include src="base-procedure-media.xml,breckenridge-media.xml" merge="xmlmerge.properties"/>
 			<include src="base-procedure-valuationcontrol.xml"/>
 			<include src="base-procedure-movement.xml"/>
 			<include src="base-procedure-objectexit.xml"/>

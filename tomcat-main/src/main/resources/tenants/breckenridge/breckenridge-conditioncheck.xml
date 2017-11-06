@@ -19,4 +19,17 @@
             </field>
         </repeat>
     </section>
+    <section id="conditionCheckInformation">
+        <field id="conditionCheckReason">
+            <selector>conditioncheck-conditionCheckReason</selector>
+            <options>
+                <option id="" default="yes">Please select a value</option>
+                <option id="conservation">Conservation</option>
+                <option id="damagedintransit">Damaged in transit</option>
+                <option id="loanin">Loan in</option>
+                <option id="maintenance">Maintenance</option>
+                <option id="newacquisition">New acquisition</option>
+            </options>
+        </field>
+    </section>
 </record>

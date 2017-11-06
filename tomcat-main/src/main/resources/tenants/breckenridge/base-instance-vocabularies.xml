@@ -44,11 +44,14 @@
             <option id="unknown">unknown</option>
             <option id="accessionstatusunclear">accession status unclear</option>
             <option id="accessioned">accessioned</option>
+            <option id="cne">CNE</option>
+            <option id="conservation">conservation</option>
             <option id="deaccessioned">deaccessioned</option>
             <option id="destroyed">destroyed</option>
             <option id="destructiveanalysis">destructive analysis</option>
             <option id="discarded">discarded</option>
             <option id="exchanged">exchanged</option>
+            <option id="inc">InC</option>
             <option id="intendedfortransfer">intended for transfer</option>
             <option id="irregularmuseumnumber">irregular museum number</option>
             <option id="missing">missing</option>
@@ -58,6 +61,7 @@
             <option id="notreceived">not received</option>
             <option id="numbernotused">number not used</option>
             <option id="objectmount">object mount</option>
+            <option id="ok">ok</option>
             <option id="onloan">on loan</option>
             <option id="partiallydeaccessioned">partially deaccessioned</option>
             <option id="partiallyexchanged">partially exchanged</option>
@@ -67,6 +71,7 @@
             <option id="sold">sold</option>
             <option id="stolen">stolen</option>
             <option id="transferred">transferred</option>
+            <option id="unstable">unstable</option>
         </options>
     </instance>
 
