@@ -55,7 +55,7 @@
                 <domain>mcgill</domain>
 				<version>0.1</version>
 				<display-name>McGill Visual Arts Collection Tenant</display-name>
-				<create-disabled>${CSPACE_FCART_CREATE_DISABLED_OPT}</create-disabled>
+				<create-disabled>${CSPACE_MCGILL_CREATE_DISABLED_OPT}</create-disabled>
 			</tenant>
 			<repository>
 				<domain>mcgill</domain>
