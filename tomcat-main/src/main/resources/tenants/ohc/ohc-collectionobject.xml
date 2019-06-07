@@ -17,6 +17,7 @@
         <field id="oaiCollectionPlace" autocomplete="place-place,place-place_shared,place-tgn_place" section ="ohc"/>
         <field id="oaiLocVerbatim" section="ohc"/>
       </repeat>
+    </section>  
 		
 		<!-- In the Natural History extension, this field was a "summary" field (aka, object name in generic search results).  For OHC, we want to use the default objectName field as the summary. -->
 		<repeat id="taxonomicIdentGroupList/taxonomicIdentGroup" section="naturalhistory_extension">
