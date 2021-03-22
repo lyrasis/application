@@ -1,9 +1,9 @@
 <settings>
   <admin>
-    <username>admin@pacificbonsaimuseum.org</username>
+    <username>admin@fwm.collectionspace.org</username>
     <password>Administrator</password>
-    <tenant>100004</tenant>
-    <tenantname>pbm</tenantname>
+    <tenant>100016</tenant>
+    <tenantname>fwm</tenantname>
     <cookievalidformins>60</cookievalidformins>
     <!-- termLists, autocomplete instance lists, specs, and schemas,
              static UI elements, etc.
@@ -42,7 +42,7 @@
 				<!-- <daysvalid>1</daysvalid> --> <!-- As of v5.0, this field is no longer used. -->
 				<tokenExpirationSeconds>300</tokenExpirationSeconds>
 			</token>
-			<loginpage>/cspace/pbm/resetpw</loginpage>
+			<loginpage>/cspace/fwm/resetpw</loginpage>
 			<subject>CollectionSpace password reset</subject>
 			<message>Hello {{greeting}},\n\rYou've started the process to reset your CollectionSpace account password.\n\rTo finish resetting your password, go to the Reset Password page on CollectionSpace using this link: {{link}}.\n\r\n\rPlease do not reply to this email. This mailbox is not monitored and you will not receive a response. For assistance, contact your CollectionSpace administrator directly.</message>
 		</passwordreset>
@@ -51,15 +51,15 @@
     <service>
       <url>http://localhost:@JEE_PORT@/cspace-services</url>
       <tenant>
-        <id>100004</id>
-        <name>pacificbonsaimuseum.org</name>
+        <id>100016</id>
+        <name>fwm.collectionspace.org</name>
         <version>0.1</version>
-        <display-name>Collectionspace PBM Tenant</display-name>
-        <create-disabled>${CSPACE_PBM_CREATE_DISABLED_OPT}</create-disabled>
+        <display-name>Collectionspace FWM Tenant</display-name>
+        <create-disabled>${CSPACE_FWM_CREATE_DISABLED_OPT}</create-disabled>
       </tenant>
       <repository>
-        <domain>pbm</domain>
-        <name>pbm</name>
+        <domain>fwm</domain>
+        <name>fwm</name>
         <client>nuxeo-java</client>
         <dateformats>
           <pattern>MM/dd/yyyy</pattern>
@@ -71,7 +71,7 @@
         </languages>
         <indexHandler>org.collectionspace.services.common.init.AddIndices</indexHandler>
       </repository>
-      <ims-url>/collectionspace/tenant/pbm/</ims-url>
+      <ims-url>/collectionspace/tenant/fwm/</ims-url>
       <!-- NOTE: should be in separate IMS section? -->
     </service>
   </persistence>
