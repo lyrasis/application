@@ -1,8 +1,9 @@
 <record id="collection-object" is-extension="true">
   <services-record-path id="fineart">
-      collectionobjects_fineart:http://collectionspace.org/services/collectionobject/domain/collectionobject,collectionobjects_fineart
+    collectionobjects_fineart:http://collectionspace.org/services/collectionobject/domain/collectionobject,collectionobjects_fineart
   </services-record-path>
   <section id="identificationInformation">
+      <field id="catalogLevel" section="fineart" autocomplete="true" ui-type="enum" />
       <field id="collaboration" section="fineart" />
       <field id="legalrestrictions" section="fineart" />
   </section>
