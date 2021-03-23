@@ -1,8 +1,8 @@
 <settings>
   <admin>
-    <username>admin@fwm.collectionspace.org</username>
+    <username>admin@fabricworkshop.org</username>
     <password>Administrator</password>
-    <tenant>100016</tenant>
+    <tenant>1214</tenant>
     <tenantname>fwm</tenantname>
     <cookievalidformins>60</cookievalidformins>
     <!-- termLists, autocomplete instance lists, specs, and schemas,
@@ -51,8 +51,8 @@
     <service>
       <url>http://localhost:@JEE_PORT@/cspace-services</url>
       <tenant>
-        <id>100016</id>
-        <name>fwm.collectionspace.org</name>
+        <id>1214</id>
+        <name>fabricworkshop.org</name>
         <version>0.1</version>
         <display-name>Collectionspace FWM Tenant</display-name>
         <create-disabled>${CSPACE_FWM_CREATE_DISABLED_OPT}</create-disabled>
