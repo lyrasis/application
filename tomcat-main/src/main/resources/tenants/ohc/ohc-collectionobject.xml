@@ -17,10 +17,6 @@
 			<field id="determinationTaxon" mini="search,list"/>
 		</repeat>
 
-		<!-- New fields -->
-
-		<field id="descriptionLevel" autocomplete="vocab-descriptionlevel" ui-type="enum" section="ohc" />
-
 		<repeat id="categoryGroupList/categoryGroup" section="ohc">
 			<field id="category" mini="search" autocomplete="concept-nomenclature" section="ohc" />
 			<field id="subCategory" mini="search" autocomplete="concept-nomenclature" section="ohc" />
@@ -39,11 +35,6 @@
 			<field id="material" autocomplete="concept-material_ca" />
 		</repeat>
 
-		<!-- Add new apparelSize field -->
-		<repeat id="apparelSizes" section="ohc">
-			<field id="apparelSize" autocomplete="vocab-apparelsizes" ui-type="enum" section="ohc" />
-		</repeat>
-
 		<field id="majorTaxon" autocomplete="vocab-majortaxon" ui-type="enum" section="ohc" />
 	</section>
 
@@ -59,5 +50,14 @@
 				<field id="assocPeople" autocomplete="true" />
 			</repeat>
 		</section>
+	</section>
+
+	<!-- When fields are added to the base profiles that already exist in OHC,
+		 move the conflicting fields to this section. -->
+	<section id="ohcFields">
+		<field id="descriptionLevel" autocomplete="vocab-descriptionlevel" ui-type="enum" section="ohc" />
+		<repeat id="apparelSizes" section="ohc">
+			<field id="apparelSize" autocomplete="vocab-apparelsizes" ui-type="enum" section="ohc" />
+		</repeat>
 	</section>
 </record>
