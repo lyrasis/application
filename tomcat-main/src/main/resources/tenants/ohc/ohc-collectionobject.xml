@@ -16,7 +16,7 @@
 		<repeat id="determinationHistoryGroupList/determinationHistoryGroup">
 			<field id="determinationTaxon" mini="search,list"/>
 		</repeat>
-  </section>
+	</section>
 
 	<section id="descriptionInformation">
 		<repeat id="materialGroupList/materialGroup">
@@ -47,14 +47,5 @@
 		<field id="descriptionLevel" autocomplete="vocab-descriptionlevel" ui-type="enum" section="ohc" />
 
 		<field id="majorTaxon" autocomplete="vocab-majortaxon" ui-type="enum" section="ohc" />
-
-		<repeat id="namedTimePeriods" section="ohc">
-			<field id="namedTimePeriod" autocomplete="vocab-namedtimeperiods" ui-type="enum" section="ohc" />
-		</repeat>
-		
-		<repeat id="oaiSiteGroupList/oaiSiteGroup" section="ohc">
-			<field id="oaiCollectionPlace" autocomplete="place-place,place-place_shared,place-tgn_place" section ="ohc"/>
-			<field id="oaiLocVerbatim" section="ohc"/>
-		</repeat>
 	</section>
 </record>
