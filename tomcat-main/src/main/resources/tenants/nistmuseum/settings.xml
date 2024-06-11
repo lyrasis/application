@@ -1,6 +1,6 @@
 <settings>
   <admin>
-    <username>admin@lhmc</username>
+    <username>admin@nistmuseum.collectionspace.org</username>
     <password>Administrator</password>
     <tenant>100039</tenant>
     <tenantname>nistmuseum</tenantname>
@@ -52,7 +52,7 @@
       <url>http://localhost:@JEE_PORT@/cspace-services</url>
       <tenant>
         <id>100039</id>
-        <name>lhmc</name>
+        <name>nistmuseum.collectionspace.org</name>
         <domain>nistmuseum</domain>
         <version>0.1</version>
         <display-name>Collectionspace NISTMUSEUM Tenant</display-name>
